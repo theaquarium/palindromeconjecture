@@ -5,10 +5,8 @@ window.addEventListener('load', () => {
 		const maxIter = document.querySelector('#MaxIter').value;
 		
 		// weed out bad parameters
-		if (lowBound == 0 || highBound == 0 || maxIter == 0) {
-			return;
-		}
-		if (lowBound < 10 || highBound < 10 || maxIter < 1) {
+		if (lowBound < 1 || highBound < 1 || maxIter < 1) {
+			alert('Please enter a whole number.');
 			return;
 		}
 
