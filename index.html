@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Palindrome Conjecture Tester</title>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="index.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="Header">
+		<div class="Title">Palindrome Conjecture Tester</div>
+		<div class="Instructions">
+			This is a website to test the Palindrome Conjecture, which can be stated as follows:
+			<br><br>
+			If you take any number and add it to its inverse (digits reversed), after repeating the process with the result a finite number of times, will it eventually become a palindrome?
+		</div>
+	</div>
+	<div class="Options">
+		<div class="Instructions">Enter a range of numbers to test.<br>You can test one number by setting both fields to the same value.</div>
+		<div class="Field">Range: <input id="LowBound" type="number" min="10" value="10"> to <input id="HighBound" type="number" min="10" value="200"></div>
+		<div class="Instructions">Choose a maximum number of times to check whether a number forms a palindrome.<br>Lower iteration values can result in less accurate answers, but prevent numbers that don't form palindromes from freezing your computer.</div>
+		<div class="Field">Maximum Iterations: <input id="MaxIter" type="number" min="1" value="50"></div>
+		<div class="Button noselect">Test</div>
+	</div>
+	<div class="Note is-hidden">
+		<em>Note:</em> If you get many numbers that don't result in palindromes, your iteration count is probably too low. However, due to the limitations of modern browsers, there is a maximum number that the browser can calculate without resulting in <a href="https://en.wikipedia.org/wiki/Integer_overflow">overflow</a>, which restricts calculation of numbers that require many iterations to produce a palindrome.
+		The only non-palindrome I've been able to calculate with this is 196, which is the lowest non-palindrome. <a href="https://oeis.org/A006960">Here is an accurate list of non-palindromes.</a>
+	</div>
+	<div class="FooterBar">
+        <div class="FooterBar-text">
+          Copyright © 2020 Peter Vashevko
+          <br>
+          See code and license for this site on <a href="https://github.com/theaquarium/palindromeconjecture">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>

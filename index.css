@@ -1,0 +1,171 @@
+html, body {
+	margin: 0;
+}
+
+body {
+	background: #eee;
+	font-family: 'Inter', sans-serif;
+	font-size: calc(20px + 1vmin);
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Title {
+	width: 100%;
+	font-size: 3.5rem;
+	font-weight: 800;
+	text-align: center;
+	color: #2a2a2a;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.Instructions {
+	text-align: center;
+	font-size: 1.2rem;
+	max-width: 50rem;
+}
+
+.Options {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.Options div {
+	margin: 0.5rem;
+}
+
+.Options > .Field {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.Options input {
+	font-size: 1.5rem;
+	width: 5rem;
+	height: 2.25rem;
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	border-radius: 0.25rem;
+	border: 1px solid #222;
+	background: #fafafa;
+	padding: 0.15rem;
+}
+
+.Button {
+	background: #fafafa;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.25s ease-out;
+	cursor: pointer;
+	border-radius: 1.2rem;
+	font-size: 1.5rem;
+	padding: 0.5rem 1.1rem;
+	margin-top: 1rem !important;
+}
+
+.Button:hover,
+.Button:active {
+	background-color: rgb(196, 224, 247);
+	box-shadow: 0px 15px 20px rgba(32, 32, 32, 0.459);
+	transform: translateY(-0.25rem);
+}
+
+.FooterBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 1.5vh;
+    background: #e0e0e0;
+    font-size: 1rem;
+    text-align: center;
+	font-weight: 600;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: underline;
+	color: #555555;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #333;
+}
+
+table {
+	margin: 2rem;
+	border-top: 1px solid #333;
+	font-size: 1.2rem;
+	border: none;
+	border-collapse: collapse;
+}
+
+th {
+	background: rgb(224, 224, 224);
+	font-weight: 700;
+}
+
+td, th {
+	border: none;
+	padding: 0.25rem;
+	text-align: center;
+}
+
+tr:nth-child(even) td {
+	background: #fafafa;
+}
+  
+tr:nth-child(odd) td {
+	background: #f3f3f3;
+}
+
+tr.RowPalindromeFalse td {
+	background: #ffe3ec;
+}
+
+.ResultBox {
+	width: 1.2rem;
+	height: 1.2rem;
+	/* margin-right: 0.5rem; */
+}
+
+.PalindromeTrue {
+	background: #32a852;
+}
+.PalindromeFalse {
+	background: #db3737;
+}
+
+/* https://stackoverflow.com/a/4407335/8005366 */
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Opera and Firefox */
+}
+
+.Note {
+	font-size: 1.2rem;
+	max-width: 50rem;
+}
+
+em {
+	font-weight: 700;
+	font-style: normal;
+}
+
+.is-hidden {
+	display: none;
+}
